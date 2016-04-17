@@ -1,0 +1,47 @@
+RewriteEngine on
+# controlador pagina 
+RewriteRule ^([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)$ index.php?pagina=$1
+
+
+##controlador acceso##
+
+RewriteRule ^acceso/login$ index.php?pagina=acceso&p1=login
+
+##controlador acceso##
+
+
+##controlador recuperar-cuenta##
+
+RewriteRule ^recuperar-cuenta/recuperar$ index.php?pagina=recuperar-cuenta&p1=recuperar
+
+##controlador recuperar-cuenta##
+
+##controlador registro##
+
+RewriteRule ^crear-cuenta/get_ciudades$ index.php?pagina=crear-cuenta&p1=get_ciudades
+RewriteRule ^crear-cuenta/crear$ index.php?pagina=crear-cuenta&p1=crear
+
+##controlador registro##
+
+
+##controlador cuenta##
+
+RewriteRule ^mi-cuenta/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)$ index.php?pagina=mi-cuenta&accion=$1
+RewriteRule ^mi-cuenta/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)$ index.php?pagina=mi-cuenta&accion=$1&opt1=$2
+RewriteRule ^mi-cuenta/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)$ index.php?pagina=mi-cuenta&accion=$1&opt1=$2&opt2=$3
+##controlador cuenta##
+
+
+
+##controlador catalgo##
+
+RewriteRule ^catalogo/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)$ index.php?pagina=catalogo&p1=$1
+RewriteRule ^catalogo/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)$ index.php?pagina=catalogo&p1=$2&p2=3
+
+##controlador catalgo##
+
+##controlador productos##
+
+RewriteRule ^producto/([\w-\-ñ-á-é-í-ó-ú-´-ü0-9]*)$ index.php?pagina=producto&p1=$1
+
+##controlador productos##

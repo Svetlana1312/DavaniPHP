@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - aclass_davani@localhost" uuid="50cec2b8-6ef8-4892-8e54-cc6b3898e9fe">
+      <secret-storage>master_key</secret-storage>
+      <user-name>aclass_da_u</user-name>
+      <schema-pattern>aclass_davani.*</schema-pattern>
+      <default-schemas>aclass_davani.*</default-schemas>
+    </data-source>
+    <data-source name="MySQL - db_davani@localhost" uuid="1eb2b3ef-22ab-4076-b301-b02eb13b46e3">
+      <secret-storage>master_key</secret-storage>
+      <user-name>U1331556</user-name>
+      <schema-pattern>db_davani.*</schema-pattern>
+      <default-schemas>db_davani.*</default-schemas>
+    </data-source>
+  </component>
+</project>

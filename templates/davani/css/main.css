@@ -1,0 +1,319 @@
+/*
+Diseño web realizado por Angel Fraga Parodi
+*/
+/* 
+    Created on : 05-may-2015, 14:22:55
+    Author     : Angel Fraga Parodi
+*/
+
+@font-face {
+    font-family: 'playballregular';
+    src: url('../fonts/playball-webfont.eot');
+    src: url('../fonts/playball-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playball-webfont.woff2') format('woff2'),
+         url('../fonts/playball-webfont.woff') format('woff'),
+         url('../fonts/playball-webfont.ttf') format('truetype'),
+         url('../fonts/playball-webfont.svg#playballregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+.playball{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+div.errorMessage {
+    color: #aa0000;
+}
+/* modify tags html */
+body{background-image: url(../img/body.gif)}
+body>.container{background-color: white;min-height: 600px;box-shadow: 1px 2px 3px 4px rgba(0,0,0,0.4);margin: 20px auto;}
+#header{padding:10px 0;}
+    /*menu*/
+    .navbar{margin:auto;}
+    .navbar a{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;color: #000;font-size: 1.4em}
+    .navbar ul li a{padding-left:0.5em;padding-right: 0.5em}
+    .navbar ul li:hover a{background-color: transparent;}
+    .navbar a:hover{color:#337ab7}
+    /**/
+ hr{display: block; height: 1px;
+    border: 0; border-top:1px solid silver;
+    margin: 0.2em auto; padding: 0;}
+/*content*/
+#bar {margin-bottom: 20px;}
+#bar .panel{border:none;box-shadow: none}
+#bar .panel-heading{margin:0;"Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 1.5em;padding: 0;background: transparent;border:none;}
+#bar .panel-body{padding-top:0;border:none;}
+#bar .panel ul{padding:0;list-style-image: url(../img/marker.gif)}
+#bar .panel ul a{display: inline-table;width:auto;}
+#bar .panel ul a:hover{text-decoration: none;}
+#bar .panel ul li{position:relative;}
+#bar .panel ul li span{position:absolute;right:0;}
+#bar .panel h2{font-size:1em;border:none;color:#1e1e1e;margin:0;}
+#bar .panel ul a:hover h2{color:#adadad;}
+    /*segundo nivel*/
+#bar .panel ul ul{padding-left: 1.5em;}
+/********** Main*/
+    #main .input-group label{color:#66afe9}
+    #main h2,h3{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}  /*  el valor era playballregular pero da error*/
+    /* carousel */
+    #carousel-id{padding:10px;box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.4)}
+    #carousel-id img{width:100%;height:370px;}
+    #carousel-id h1{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+    #carousel-id .btn{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: rgba(250,250,250,0.6);
+        color:black;
+        transition-duration: 1s;}
+    #carousel-id .btn:hover{border-color:black;background-color: rgba(250,250,250,1);}
+        /*fade*/
+        .carousel-fade .carousel-inner .item {
+            opacity: 0;
+            -webkit-transition-property: opacity;
+            -moz-transition-property: opacity;
+            -o-transition-property: opacity;
+            transition-property: opacity;
+          }
+          .carousel-fade .carousel-inner .active {
+            opacity: 1;
+          }
+          .carousel-fade .carousel-inner .active.left,
+          .carousel-fade .carousel-inner .active.right {
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+          }
+          .carousel-fade .carousel-inner .next.left,
+          .carousel-fade .carousel-inner .prev.right {
+            opacity: 1;
+          }
+          .carousel-fade .carousel-control {
+            z-index: 2;background: none;
+          }
+    /* carousel product*/
+    .carousel-product{margin:10px auto;}
+    .carousel-product h3{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+    .carousel-product img{margin:auto;width: 100%;border-radius:0px;box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.4)}
+    .carousel-product h4{font-weight: bold;height:2em;font-size: 1em;}
+    .carousel-product h5{margin-top:0px;font-weight: bold;font-size: 0.8em;display: inline}
+    .carousel-product .btn-danger{display: inline;float:right;}
+    /* components list-categorias*/
+    .list-categorias{cursor: pointer;border-radius:0px;color:#1e1e1e;}
+    .list-categorias:hover{border-color: #adadad;text-decoration: none}
+    .list-categorias h3{font-size: 1.2em;height: 2em;text-align: center}
+    .list-categorias:hover h3{color:#28a4c9;}
+    /** list productos **/
+    .list-productos span{min-height: 25px;border-radius:0px;border:1px solid silver;}
+    /**/
+    #block-product-img{border:1px solid silver;}
+    #block-product-img .super{width: 100%}
+    #block-product-img  img{cursor:pointer}
+    #block-product-img .controls a{position: absolute;top:40%;}
+    #block-product-img .controls a.left{left:-10px;}
+    #block-product-img .controls a.right{right:-10px;}
+    .tab-content{border:1px solid silver;border-top:none;}
+/**/
+#footer{padding:20px 3px;}
+#footer ul{list-style: none;padding: 0px;}
+#footer ul li span{color:silver;}
+#footer ul li a{color:#9d9d9d}
+.to-top{min-width: 50px;padding:5px !important; }
+.to-top:hover{text-decoration: none; }
+/*modify bootstrap class*/
+.btn{border-radius: 0px;}
+.btn-primary{background-color: black;color:white;border-color:black;border-radius:0px;transition-duration: 1s;}
+.btn-danger{background-color:#B40404;color:white;border-color:#B40404;border-radius:0px;font-family: 'playballregular'}
+.btn-magnenta{background-color: #712b68;color:white}
+.btn-magnenta:hover{background-color: darkmagenta;color:white}
+.form-control{border-radius:0px !important;}
+.input-group-addon{border-radius:0px !important;}
+.form-group{margin:10px auto !important;padding:0px;}
+*[data-toggle="collapse"]{cursor: pointer}
+textarea{max-width: 100%;min-height: 200px}
+legend{font-family:'playballregular';font-size:1.2em;}
+.center-block{float:none;margin: auto;}
+/************ sm */
+@media screen and (max-width:992px){
+    /*slider*/
+    #carousel-id h1{font-size: 2em;}
+    #carousel-id .carousel-caption{padding-bottom: 0px;}
+    #carousel-id .btn{padding:5px;}
+    #carousel-id img{max-height:250px}
+}
+/************ xs  */
+@media screen and (max-width:768px){
+    /*wraper container*/
+    body>.container{margin:auto;}
+    /*menu*/
+    .navbar{position:fixed;top:0px;padding:0px;z-index:100;}
+    .navbar.active{width:100%;height:100%;right:0px;background:rgba(0,0,0,0.8);}
+    .navbar a{color:white;}
+    .navbar a:hover{color:#1e1e1e;}
+    .navbar-header{border:none;}
+    .navbar .navbar-toggle{background:rgba(100,100,100,1);color:white;border-radius:0px;float:left;margin-left:10px;}
+    .navbar .navbar-toggle span{font-size: 2em}
+    .navbar.active .navbar-toggle{background:white;border-radius: 0px;color:#1e1e1e;}
+    .navbar ul li:hover a{background-color:silver;}
+    /*bar*/
+    #product-bar {}
+    #bar{margin-bottom: unset;}
+    #bar .panel-heading:first-child{color:white;background-color: black;padding: 5px;}
+    #bar .panel-body{padding:0px;margin-bottom: 0px;}
+    #bar .panel-body ul{padding-left: 5px}
+    #bar .panel-body ul li{width:100%;border-bottom: 1px solid silver}
+    #bar .panel-body ul li ul li:last-child{border:none}
+    #bar .panel-body ul a{font-size: 1.4em;font-family: 'playballregular';margin:5px auto;}
+    /*slider*/
+    #carousel-id{padding:0px;box-shadow: none;}
+    #carousel-id img{max-height:inherit;min-height: 200px;height: auto;}
+    #carousel-id h1{font-size: 2em;}
+    #carousel-id .btn{background: rgba(0,0,0,0.5);color:white;}
+    /*listarcategorias*/
+    .list-categorias,.list-categorias div{padding:0px !important;text-align: left;margin:0px}
+    /*to-top*/
+    .to-top{position:fixed;bottom:10px;z-index:1000;left:0px;display:none;}
+}
+/*own class*/
+.overflow-auto{overflow: auto;}
+.overflow-hidden{overflow: hidden;}
+.overflow-none{overflow: unset;}
+
+
+
+/****** tests css*/
+/*ofer*/
+.shape{    
+    height: 50px;
+    width: 50px;
+    float: right;
+    background-color: #712b68;
+    color: white;
+    position: relative;
+    line-height: 50px;height: 50px;
+    border-radius: 0px 0px 0px 15px
+}
+.shape-text{
+    color:white; font-weight:bold; position:relative;  white-space: nowrap;
+    text-align: center;vertical-align: center;
+    line-height: 50px;height: 50px;font-size: 2em;
+    margin-top:10px;
+}
+.offer{
+	background:#fff; border:1px solid #ddd; margin: 15px 0; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);overflow:hidden;
+}
+.offer:hover{ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);cursor: pointer;}
+.offer-radius{
+	border-radius:7px;
+}
+.offer-info {	border-color: #712b68; }
+.offer-info .shape{
+	border-color: transparent #712b68 transparent transparent;
+}
+
+.offer-content{
+	padding:0 20px 10px;
+}
+@media (min-width: 487px) {
+  .container {
+    max-width: 750px;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    max-width: 970px;
+  }
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  }
+  
+  
+  /*pagination*/
+ .pagination{border-color: #712b68}
+ .pagination li.active a{background-color: darkmagenta !important;border-color: darkmagenta}
+
+
+
+ /**/
+ .bg-dark,.bg-dark:hover{background-color: #1e1e1e !important;color:white !important;}
+.bg-gold,.bg-gold:hover{background-color: #D8D076 !important;color:white !important;}
+ table .bg-danger:hover,table .bg-danger{background-color: #F96868 !important}
+ 
+ 
+ /*Explore*/
+ .file {height:140px;}
+  .file:hover{z-index:100;background-color: #66afe9;}
+ .file b{word-break: all;max-width: 100%;word-wrap:break-word;background-color: white;display: block}
+ .file:hover b{border:1px solid black;}
+ .file img{max-height:100px;min-height: 100px;margin: auto;}
+  .file:hover img{height: auto;}
+ .file ul ul{left:100%;top:0px;}
+ .file ul li:hover ul{display:block;}
+ 
+ 
+ 
+ /**/
+ #cookies{position: fixed;bottom:0px;text-align: center;background: rgba(0,0,0,0.5);margin:0px;width:100%;z-index: 100;color: white;border-radius: 0px;}
+ #cookies .close{left: 0px ;float:left !important;}
+
+
+
+
+ /*test*/
+ /**
+ * Start by hiding the checkboxes
+ */
+
+.checkbox{
+  width: 30px !important;
+  height: 15px !important;
+  background: #ddd;
+  position: relative !important;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  border:1px solid white;
+  padding: 2px;
+  display: inline-table;
+}
+.checkbox input[type=checkbox] {
+  opacity:0;
+  z-index: 100;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin:0 !important;
+  cursor: pointer;
+}
+.checkbox label {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: rgb(223, 25, 40);
+  padding: 0;
+  border:none;
+  margin:0;
+  min-height: 15px;
+  top:2px;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  transition: all .3s linear;
+}
+.checkbox input[type=checkbox]:checked + label ,.checkbox input[type=checkbox]:checked{
+  background-color: rgb(82, 189, 59);
+  right:0 !important;
+  margin-left: 50%;
+  left:50%;
+}
